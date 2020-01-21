@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="russian">
+<head>
+        <meta charset="utf-8" />
+        <title>Markdown syntax for Pelican Quick Reference</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">divers </a></h1>
+                <nav><ul>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/category/msdos_11.html">msdos_1.1</a></li>
+                    <li><a href="/category/other.html">Other</a></li>
+                    <li class="active"><a href="/category/pelican.html">pelican</a></li>
+                    <li><a href="/category/review.html">Review</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/markdown-syntax-for-pelican-quick-reference.html" rel="bookmark"
+           title="Permalink to Markdown syntax for Pelican Quick Reference">Markdown syntax for Pelican Quick Reference</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-06-20T15:28:00+04:00">
+                Published: Пт 20 Июнь 2014
+        </abbr>
+		<br />
+        <abbr class="modified" title="2014-12-23T10:02:00+03:00">
+                Updated: Вт 23 Декабрь 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/diver.html">diver</a>
+        </address>
+<p>In <a href="/category/pelican.html">pelican</a>.</p>
+<p>tags: <a href="/tag/development.html">development</a> <a href="/tag/markdown.html">markdown</a> </p>
+</footer><!-- /.post-info -->      <p>This post is a simple markdown syntax reference for Pelican(the static blog generator that builds this blog), especially coupled with some features from Python-Markdown.</p>
+<h1>Basic Syntax</h1>
+<h2>Headings</h2>
+<p>Setext style:</p>
+<div class="highlight"><pre><span></span><span class="gh">This is an H1</span>
+<span class="gh">=============</span>
+
+<span class="gh">This is an H2</span>
+<span class="gh">-------------</span>
+</pre></div>
+
+
+<p>Atx style:</p>
+<div class="highlight"><pre><span></span><span class="err"># This is H1 (#)optional</span>
+<span class="err"># This is H2 (#)</span>
+<span class="err">###### This is H6 (######)</span>
+</pre></div>
+
+
+<h2>Blockquote</h2>
+<div class="highlight"><pre><span></span><span class="err">&gt; This is the first level of quoting.</span>
+<span class="err">&gt;</span>
+<span class="err">&gt; &gt; This is nested blockquote.</span>
+<span class="err">&gt;</span>
+<span class="err">&gt; Back to the first level.</span>
+</pre></div>
+
+
+<p>will output:</p>
+<blockquote>
+<p>This is the first level of quoting.</p>
+<blockquote>
+<p>This is nested blockquote.</p>
+</blockquote>
+<p>Back to the first level.</p>
+</blockquote>
+<h2>List</h2>
+<p>Unordered list:</p>
+<div class="highlight"><pre><span></span><span class="err">* Red</span>
+<span class="err">+ Green</span>
+<span class="err">- Blue</span>
+</pre></div>
+
+
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>Ordered list:</p>
+<div class="highlight"><pre><span></span><span class="err">1. Thor</span>
+<span class="err">2. Ironman</span>
+<span class="err">3. Hulk</span>
+</pre></div>
+
+
+<ol>
+<li>Thor</li>
+<li>Ironman</li>
+<li>Hulk</li>
+</ol>
+<h2>Code block</h2>
+<div class="highlight"><pre><span></span><span class="k">Some</span> <span class="nb">text</span><span class="p">.</span>
+
+<span class="n">code</span> <span class="n">goes</span> <span class="n">here</span><span class="p">.</span>
+</pre></div>
+
+
+<h2>Horizontal rules</h2>
+<div class="highlight"><pre><span></span><span class="err">*** or --- or ___</span>
+</pre></div>
+
+
+<hr>
+<h2>Image</h2>
+<p>Inline style:</p>
+<div class="highlight"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">](</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">img</span><span class="p">.</span><span class="n">jpg</span> <span class="s">&quot;Optional title&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Reference style:</p>
+<div class="highlight"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">][</span><span class="kt">id</span><span class="p">]</span>
+<span class="p">[</span><span class="kt">id</span><span class="p">]</span><span class="o">:</span> <span class="n">url</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">image</span>  <span class="s">&quot;Optional title attribute&quot;</span>
+</pre></div>
+
+
+<h2>Link</h2>
+<div class="highlight"><pre><span></span><span class="o">*</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="o">[</span><span class="n">Google</span><span class="o">]</span><span class="p">(</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="w"> </span><span class="ss">&quot;Googlelink&quot;</span><span class="p">)</span><span class="w"> </span><span class="n">inline</span><span class="w"> </span><span class="n">link</span><span class="p">.</span><span class="w"></span>
+
+<span class="o">*</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="o">[</span><span class="n">Google</span><span class="o">][</span><span class="n">id</span><span class="o">]</span><span class="w"> </span><span class="n">reference</span><span class="o">-</span><span class="n">style</span><span class="w"> </span><span class="n">link</span><span class="p">.</span><span class="w"></span>
+<span class="o">[</span><span class="n">id</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="w">  </span><span class="ss">&quot;Optional Title Here&quot;</span><span class="w"></span>
+
+<span class="o">*</span><span class="w"> </span><span class="n">See</span><span class="w"> </span><span class="n">my</span><span class="w"> </span><span class="o">[</span><span class="n">About</span><span class="o">]</span><span class="p">(</span><span class="o">/</span><span class="n">about</span><span class="o">/</span><span class="p">)</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">details</span><span class="p">.</span><span class="w"></span>
+
+<span class="o">*</span><span class="w"> </span><span class="n">An</span><span class="w"> </span><span class="n">implict</span><span class="w"> </span><span class="o">[</span><span class="n">Google</span><span class="o">]</span><span class="err">[]</span><span class="w"> </span><span class="n">link</span><span class="p">.</span><span class="w"></span>
+<span class="o">[</span><span class="n">Google</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="w"></span>
+
+<span class="o">*</span><span class="w"> </span><span class="n">An</span><span class="w"> </span><span class="n">autolink</span><span class="w"> </span><span class="o">&lt;</span><span class="nl">http</span><span class="p">:</span><span class="o">//</span><span class="n">google</span><span class="p">.</span><span class="n">com</span><span class="o">/&gt;</span><span class="w"></span>
+
+<span class="o">*</span><span class="w"> </span><span class="n">Email</span><span class="w"> </span><span class="n">link</span><span class="w"> </span><span class="o">&lt;</span><span class="n">address</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span><span class="o">&gt;</span><span class="w"></span>
+</pre></div>
+
+
+<ul>
+<li>
+<p>This is an <a href="http://google.com/" title="Googlelink">Google</a> inline link.</p>
+</li>
+<li>
+<p>This is an <a href="http://google.com/" title="Optional Title Here">Google</a> reference-style link.</p>
+</li>
+<li>
+<p>See my <a href="/about/">About</a> page for details.</p>
+</li>
+<li>
+<p>An implict <a href="http://google.com/">Google</a> link.</p>
+</li>
+<li>
+<p>An autolink <a href="http://google.com/">http://google.com/</a></p>
+</li>
+<li>
+<p>Email link <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#100;&#100;&#114;&#101;&#115;&#115;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+</li>
+</ul>
+<h2>Phrase Emphasis</h2>
+<div class="highlight"><pre><span></span><span class="o">*</span><span class="n">stupid</span><span class="o">*</span> <span class="k">or</span> <span class="n">_stupid_</span> <span class="n">will</span> <span class="k">output</span> <span class="n">stupid</span><span class="p">.</span>
+
+<span class="o">**</span><span class="n">stupid</span><span class="o">**</span> <span class="k">or</span> <span class="n">__stupid__</span> <span class="n">will</span> <span class="k">output</span> <span class="n">stupid</span><span class="p">.</span>
+</pre></div>
+
+
+<h2>Manual Line Breaks</h2>
+<h2>Blackslash Escape</h2>
+<div class="highlight"><pre><span></span><span class="err">\ can escape following symbols: \`*_{}[]()#+-.!</span>
+</pre></div>
+
+
+<h1>Extra Features From Python-Markdown</h1>
+<p>Default features supported by Python-Markdown, i.e. extra and codehilite extension function. Consult here for more details. If you want to add more features, you should change the setting MD_EXTENSIONS (['codehilite','extra']).</p>
+<h2>Abbreviations</h2>
+<h2>Attribute Lists</h2>
+<h2>Definition Lists</h2>
+<div class="highlight"><pre><span></span><span class="n">Apple</span>
+<span class="o">:</span>   <span class="n">Pomaceous</span> <span class="n">fruit</span> <span class="n">of</span> <span class="n">plants</span> <span class="n">of</span> <span class="n">the</span> <span class="n">genus</span> <span class="n">Malus</span> <span class="k">in</span> 
+    <span class="n">the</span> <span class="n">family</span> <span class="n">Rosaceae</span><span class="o">.</span>
+
+<span class="n">Orange</span>
+<span class="o">:</span>   <span class="n">The</span> <span class="n">fruit</span> <span class="n">of</span> <span class="n">an</span> <span class="n">evergreen</span> <span class="n">tree</span> <span class="n">of</span> <span class="n">the</span> <span class="n">genus</span> <span class="n">Citrus</span><span class="o">.</span>
+</pre></div>
+
+
+<dl>
+<dt>Apple</dt>
+<dd>Pomaceous fruit of plants of the genus Malus in 
+the family Rosaceae.</dd>
+<dt>Orange</dt>
+<dd>The fruit of an evergreen tree of the genus Citrus.</dd>
+</dl>
+<h2>Fenced Code Blocks</h2>
+<div class="highlight"><pre><span></span><span class="err">~~~~.python</span>
+<span class="err">def factorial(n):</span>
+<span class="err">if n == 0:</span>
+<span class="err">    return 1</span>
+<span class="c">else:</span>
+<span class="c">    return n * factorial(n - 1)</span>
+<span class="err">~~~~</span>
+</pre></div>
+
+
+<p>will output:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+
+<hr>
+<div class="highlight"><pre><span></span><span class="err">~~~~{.python}</span>
+<span class="err">def factorial(n):</span>
+<span class="err">if n == 0:</span>
+<span class="err">    return 1</span>
+<span class="c">else:</span>
+<span class="c">    return n * factorial(n - 1)</span>
+<span class="err">~~~~</span>
+</pre></div>
+
+
+<p>will output:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+
+<hr>
+<div class="highlight"><pre><span></span>~~~~.html
+<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">&quot;color: red&quot;</span><span class="nt">&gt;</span>HTML Document<span class="nt">&lt;/p&gt;</span>
+~~~~
+</pre></div>
+
+
+<p>will output:</p>
+<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: red&quot;</span><span class="p">&gt;</span>HTML Document<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>Github's tilde syntax:</p>
+<div class="highlight"><pre><span></span><span class="err">```python</span>
+<span class="err">def factorial(n):</span>
+<span class="err">if n == 0:</span>
+<span class="err">    return 1</span>
+<span class="c">else:</span>
+<span class="c">    return n * factorial(n - 1)</span>
+<span class="err">```</span>
+</pre></div>
+
+
+<p>will output:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">return</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+
+<h2>Footnotes</h2>
+<div class="highlight"><pre><span></span><span class="n">Footnotes</span><span class="p">[</span><span class="o">^</span><span class="mi">1</span><span class="p">]</span> <span class="n">have</span> <span class="n">a</span> <span class="n">label</span><span class="p">[</span><span class="o">^</span><span class="n">label</span><span class="p">]</span> <span class="k">and</span> <span class="n">a</span> <span class="n">definition</span><span class="p">[</span><span class="o">^!</span><span class="n">DEF</span><span class="p">].</span>
+
+<span class="p">[</span><span class="o">^</span><span class="mi">1</span><span class="p">]:</span> <span class="n">This</span> <span class="k">is</span> <span class="n">a</span> <span class="n">footnote</span><span class="p">.</span>
+    <span class="n">Paragraph</span> <span class="n">two</span> <span class="k">of</span> <span class="n">the</span> <span class="n">definition</span><span class="p">.</span>
+
+    <span class="o">&gt;</span> <span class="n">A</span> <span class="n">blockquote</span> <span class="k">with</span>
+    <span class="o">&gt;</span> <span class="n">multiple</span> <span class="n">lines</span><span class="p">.</span>
+
+        <span class="n">a</span> <span class="n">code</span> <span class="n">block</span>
+
+    <span class="n">A</span> <span class="k">final</span> <span class="n">paragraph</span><span class="p">.</span>
+
+<span class="p">[</span><span class="o">^</span><span class="n">label</span><span class="p">]:</span> <span class="n">A</span> <span class="n">footnote</span> <span class="k">on</span> <span class="ss">&quot;label&quot;</span>
+<span class="p">[</span><span class="o">^!</span><span class="n">DEF</span><span class="p">]:</span> <span class="n">The</span> <span class="n">definition</span> <span class="k">of</span> <span class="n">a</span> <span class="n">footnote</span><span class="p">.</span>
+</pre></div>
+
+
+<p>Footnotes<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> have a label<sup id="fnref:label"><a class="footnote-ref" href="#fn:label">2</a></sup> and a definition<sup id="fnref:!DEF"><a class="footnote-ref" href="#fn:!DEF">3</a></sup>.</p>
+<h2>Tables</h2>
+<div class="highlight"><pre><span></span>First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+</pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<h2>CodeHilite</h2>
+<h2>Metadata for post</h2>
+<div class="highlight"><pre><span></span><span class="n">Title</span><span class="o">:</span> <span class="n">Blog</span> <span class="n">Title</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2010</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">03</span> <span class="mi">10</span><span class="o">:</span><span class="mi">20</span>
+<span class="n">Tags</span><span class="o">:</span> <span class="n">thats</span><span class="o">,</span> <span class="n">awesome</span>
+<span class="n">Category</span><span class="o">:</span> <span class="n">yeah</span>
+<span class="n">Slug</span><span class="o">:</span> <span class="n">my</span><span class="o">-</span><span class="kd">super</span><span class="o">-</span><span class="n">post</span>
+<span class="n">Author</span><span class="o">:</span> <span class="n">authorname</span>
+<span class="n">Summary</span><span class="o">:</span> <span class="n">Short</span> <span class="n">version</span> <span class="k">for</span> <span class="n">index</span> <span class="n">and</span> <span class="n">feeds</span>
+<span class="n">Status</span><span class="o">:</span> <span class="n">draft</span>
+
+<span class="n">This</span> <span class="k">is</span> <span class="n">the</span> <span class="n">content</span> <span class="n">of</span> <span class="n">my</span> <span class="kd">super</span> <span class="n">blog</span> <span class="n">post</span><span class="o">.</span>
+</pre></div>
+
+
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>This is a footnote.
+Paragraph two of the definition.</p>
+<blockquote>
+<p>A blockquote with
+multiple lines.</p>
+</blockquote>
+<div class="highlight"><pre><span></span><span class="err">a code block</span>
+</pre></div>
+
+
+<p>A final paragraph.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:label">
+<p>A footnote on "label"&#160;<a class="footnote-backref" href="#fnref:label" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:!DEF">
+<p>The definition of a footnote.&#160;<a class="footnote-backref" href="#fnref:!DEF" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
