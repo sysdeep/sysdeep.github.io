@@ -5,7 +5,7 @@
   - [Python](/collections/awesome_python.md)
   - [Rust](/collections/awesome_rust.md)
   - [Vim](/collections/awesome_vim.md)
-  - [VM](/collections/awesome_wm.md)
+  - [WM](/collections/awesome_wm.md)
   - [Forth](/collections/collection_forth.md)
 
 <!-- - Development -->
