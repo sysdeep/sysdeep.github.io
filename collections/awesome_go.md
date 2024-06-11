@@ -15,6 +15,7 @@
 
 - (archived)[Bolt](https://github.com/boltdb/bolt) - Bolt is a pure Go key/value store inspired by Howard Chu's LMDB project.
 - [bbolt](https://github.com/etcd-io/bbolt) - bbolt is a fork of Ben Johnson's [Bolt](https://github.com/boltdb/bolt) key/value store
+- [pudge](https://github.com/recoilme/pudge) - Package pudge is a fast and simple key/value store written using Go's standard library.
 
 ## Net
 

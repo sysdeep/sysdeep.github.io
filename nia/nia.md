@@ -60,6 +60,10 @@
 - https://gitflic.ru/project/sysdeep/nvim-config - моя конфигурация nvim до использования astronvim - почти пустая
 - https://gitflic.ru/project/sysdeep/registry-uis - попытка написать UI для управления registry - состояние - непонятное
 
+## Нужное
+
+- https://sourcefoundry.org/hack/ - Hack is hand groomed and optically balanced to be your go-to code face.
+
 ## Просто список нужных ссылок
 
 - https://vonheikemen.github.io/devlog/tools/how-to-survive-without-multiple-cursors-in-vim/
@@ -80,3 +84,8 @@
 
 - [restic](https://github.com/restic/restic) - is a backup program that is fast, efficient and secure
   - [documentation](https://restic.readthedocs.io/en/latest)
+
+## Интересные проекты
+
+- https://caddyserver.com/ - THE ULTIMATE SERVER makes your sites more secure, more reliable, and more scalable than any other solution.
+- https://neutralino.js.org/ - Build lightweight cross-platform desktop apps with JavaScript, HTML, and CSS
