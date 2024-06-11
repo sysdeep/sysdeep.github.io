@@ -22,7 +22,12 @@
 
         subMaxLevel: 2,
 
-        loadNavbar: "navbar.md",
+        loadNavbar: "_navbar.md",
+
+        // use same navbar for all struct
+        alias: {
+          "/.*/_navbar.md": "/_navbar.md",
+        },
 
         themeColor: "#1F11B5",
 
