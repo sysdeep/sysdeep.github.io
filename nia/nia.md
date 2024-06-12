@@ -63,6 +63,7 @@
 ## Нужное
 
 - https://sourcefoundry.org/hack/ - Hack is hand groomed and optically balanced to be your go-to code face.
+- https://github.com/yt-dlp/yt-dlp - yt-dlp is a feature-rich command-line audio/video downloader
 
 ## Просто список нужных ссылок
 
@@ -95,3 +96,22 @@
 - https://obsidian.md/ - Obsidian is the private and flexible writing app that adapts to the way you think
 - https://logseq.com/ - Logseq is the open toolbox for workflows that deal with lots of information
 - https://anytype.io/ - The everything app for those who celebrate trust & autonomy
+
+## Статьи
+
+- [Простейшая командная строка на NASM и QEMU](https://habr.com/ru/articles/442428/)
+- [Учимся общаться между микросервисами на Node.js через RabbitMQ](https://habr.com/ru/articles/447250/)
+- [Создание и развёртывание REST API с помощью Go, PostgreSQL, JWT и GORM](https://tproger.ru/translations/deploy-a-secure-golang-rest-api)
+- [Разработка веб-серверов на Go](https://tproger.ru/translations/go-web-server)
+- [Пентест-лаборатория «Pentestit Test lab 12» — полное прохождение](https://habr.com/ru/articles/458214/)
+- [Torrent-файл. Что же у него внутри?](https://habr.com/ru/articles/119753/)
+- [SVG индикатор загрузки на Vue.js](https://habr.com/ru/articles/460399/)
+- [Подборка классических ОС, которые можно запустить в браузере](https://tproger.ru/digest/classic-os-in-browser)
+- [Разработка динамических древовидных диаграмм с использованием SVG и Vue.js](https://habr.com/ru/companies/ruvds/articles/463329/)
+
+## Просто ссылки чтобы не потерять
+
+- https://lazyfoo.net/tutorials/SDL/index.php - Beginning Game Programming
+- https://www.windows93.net/ - странный сайт эмуляции
+- [Version Museum](https://www.versionmuseum.com/) - A visual history of your favorite technology
+- [WebSSH](https://github.com/huashengdun/webssh) - A simple web application to be used as an ssh client to connect to your ssh servers. It is written in Python, base on tornado, paramiko and xterm.js.

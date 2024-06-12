@@ -3,10 +3,16 @@
 - Collections
   - [Go](/collections/awesome_go.md)
   - [Python](/collections/awesome_python.md)
+  - [JS](/collections/awesome_js.md)
+  - [Web](/collections/awesome_web.md)
+  - [C/CPP](/collections/awesome_c_cpp.md)
   - [Rust](/collections/awesome_rust.md)
   - [Vim](/collections/awesome_vim.md)
   - [WM](/collections/awesome_wm.md)
   - [Forth](/collections/collection_forth.md)
+  - [Terminal](/collections/awesome_terminal.md)
+  - [Admin](/collections/awesome_admin.md)
+  - [Other](/collections/awesome_other.md)
 
 <!-- - Development -->
 <!---->
