@@ -89,3 +89,9 @@
 
 - https://caddyserver.com/ - THE ULTIMATE SERVER makes your sites more secure, more reliable, and more scalable than any other solution.
 - https://neutralino.js.org/ - Build lightweight cross-platform desktop apps with JavaScript, HTML, and CSS
+
+## База знаний
+
+- https://obsidian.md/ - Obsidian is the private and flexible writing app that adapts to the way you think
+- https://logseq.com/ - Logseq is the open toolbox for workflows that deal with lots of information
+- https://anytype.io/ - The everything app for those who celebrate trust & autonomy
