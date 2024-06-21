@@ -1,7 +1,8 @@
 - [Main](/)
 - [Nia](/nia/nia.md)
 - Collections
-  - [Go](/collections/awesome_go.md)
+  - [Awesome](/collections/awesome/index.md)
+  - [Go](/collections/awesome_go/index.md)
   - [Python](/collections/awesome_python.md)
   - [JS](/collections/awesome_js.md)
   - [Web](/collections/awesome_web.md)

@@ -5,11 +5,13 @@
 
 ---
 
+## Development
+
 - [Air](https://github.com/cosmtrek/air) - Live reload for Go apps
 
 ## Ссылки на другие awesomeness
 
-- [https://github.com/avelino/awesome-go](https://github.com/avelino/awesome-go)
+- [https://github.com/avelino/awesome-go](https://github.com/avelino/awesome-go) - [локальная копия](/collections/awesome_go/avelino_awesome_go.md)
 
 ## Video
 
@@ -33,3 +35,7 @@
 ## Terminal
 
 - [WTF](https://wtfutil.com/) - is the personal information dashboard for your terminal([github](https://github.com/wtfutil/wtf))
+
+## Cli
+
+- [gomplate](https://github.com/hairyhenderson/gomplate) - гибкий инструмент командной строки на Go для работы с шаблонами
