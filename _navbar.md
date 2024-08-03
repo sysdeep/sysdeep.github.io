@@ -6,7 +6,7 @@
   - [Python](/collections/awesome_python.md)
   - [JS](/collections/awesome_js.md)
   - [Web](/collections/awesome_web.md)
-  - [C/CPP](/collections/awesome_c_cpp.md)
+  - [C/CPP](/collections/awesome_c_cpp/awesome_c_cpp.md)
   - [Rust](/collections/awesome_rust.md)
   - [Vim](/collections/awesome_vim.md)
   - [WM](/collections/awesome_wm.md)
