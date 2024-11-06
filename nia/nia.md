@@ -81,6 +81,13 @@
 - [Responses](https://github.com/getsentry/responses) - A utility library for mocking out the `requests` Python library.
 - [json-server](https://github.com/typicode/json-server)
 
+## Python
+
+- [Python Standalone Builds](https://github.com/indygreg/python-build-standalone) - проект по сборке разных версий python
+  - [готовые сборки](https://github.com/indygreg/python-build-standalone/releases)
+- [Portable python binaries](https://github.com/codrsquad/portable-python)
+- [Standalone Python](https://github.com/25077667/standalone-python)
+
 ## Попробовать
 
 - [restic](https://github.com/restic/restic) - is a backup program that is fast, efficient and secure
